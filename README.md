@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Agelgel - Ethiopian Agricultural Marketplace
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern full-stack web application connecting Ethiopian farmers with customers through a seamless digital marketplace.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### For Customers
+- 📱 SMS-based authentication with OTP verification
+- 🛒 Browse fresh products from local farmers
+- 🛍️ Shopping cart functionality
+- 📍 Location-based product discovery
+- 📦 Order management and tracking
 
-### `npm start`
+### For Farmers
+- 🌾 Product management dashboard
+- 📊 Inventory tracking and analytics
+- 💰 Direct sales to customers
+- 📈 Performance insights
+- 🏪 Farm profile management
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### For Administrators
+- 👥 User management
+- 📋 Order oversight
+- 📊 Platform analytics
+- 🔧 System administration
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technology Stack
 
-### `npm test`
+- **Frontend**: React 18 (Create React App), TypeScript, Tailwind CSS
+- **Backend**: Supabase (PostgreSQL, Auth, Real-time)
+- **State Management**: Zustand
+- **Authentication**: SMS OTP via Twilio
+- **Deployment**: Bolt Hosting
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js 18+ 
+- Supabase account
+- Twilio account (for SMS authentication)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd agelgel
+```
 
-### `npm run eject`
+2. Install dependencies:
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Set up environment variables:
+```bash
+cp .env.example .env
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Fill in your Supabase and Twilio credentials in the `.env` file.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Set up Supabase:
+   - Create a new Supabase project
+   - Run the migration files in `supabase/migrations/`
+   - Configure Row Level Security policies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. Start the development server:
+```bash
+npm start
+```
 
-## Learn More
+## Database Schema
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The application uses the following main tables:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **users**: User accounts (farmers, customers, admins)
+- **products**: Product listings from farmers
+- **orders**: Customer orders
+- **order_items**: Individual items within orders
 
-### Code Splitting
+## Authentication Flow
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. User enters phone number
+2. SMS OTP sent via Twilio
+3. User verifies OTP
+4. Account created or user signed in
+5. Role-based dashboard access
 
-### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is licensed under the MIT License.
 
-### Advanced Configuration
+## Support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For support and questions, please contact the development team.
