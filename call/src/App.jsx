@@ -1,5 +1,6 @@
 import React from 'react'
 import Buttans from './components/Buttans'
+import Input from './components/Input'
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <div className=" text-green-600  text-lg">
         hellow ubuntu
       </div>
+     <Input/>
       <Buttans/>
     </div>
   )
