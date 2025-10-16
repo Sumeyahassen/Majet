@@ -1,17 +1,30 @@
-import React from 'react'
-import Buttans from './components/Buttans'
-import Input from './components/Input'
-
+import React from "react";
+import Buttans from "./components/Buttans";
+import Input from "./components/Input";
+import DialPad from "./components/DialPad";
+import Array from "./Array";
+import ToDoList from "./ToDoList";
+import Phone from "./components/Phone";
+import Demo from "./components/Demo";
 function App() {
   return (
-    <div>
-      <div className=" text-green-600  text-lg">
-        hellow ubuntu
+    <div className="overflow-y-hidden min-h-screen">
+      <div className=" text-green-600  py-10 ">
+        <h1 className="text-center  text-2xl font-semibold">
+          {" "}
+          Welcame to Majet Call Senter
+        </h1>
       </div>
-     <Input/>
-      <Buttans/>
+      <Input />
+      <Buttans />
+      {/* <DialPad/>  */}
+      {/* <Array/> */}
+
+      {/* <ToDoList/> */}
+      {/* <Phone/> */}
+      {/* <Demo /> */}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
