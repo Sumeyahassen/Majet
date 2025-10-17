@@ -26,8 +26,8 @@ body{
     background-color:rgb(8,207,8);
 }
 .all{
-    background:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), 
-    url("Images/realfruit.png") no-repeat center center/cover;
+    /*background:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), 
+    url("Images/realfruit.png") no-repeat center center/cover;*/
     grid-template-rows:auto 1fr auto;
     min-height: 100vh;
     margin: 0;
