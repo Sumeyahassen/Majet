@@ -1,0 +1,137 @@
+body{
+    background-image:url(fruits.png);
+    background-size:cover;
+    display: grid;
+    grid-template-rows:auto 1fr auto;
+    min-height: 100vh;
+    width:100%;
+    overflow-x:hidden;
+    margin: 0;
+}
+h1{
+    text-align:center;
+    font:bold 60px serif;
+    color:rgb(3, 48, 3);
+}
+#h2heading{
+    text-align:center;
+    font:bold 30px verdana;
+    color:rgb(28, 99, 28);
+}
+.container{
+    background:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url('fruits.png') no-repeat center center/cover;
+    background-size:cover;
+    padding:10px;
+    flex:1;
+}
+.btn_div{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+}
+.btn{
+    background-color:rgb(11, 147, 11);
+    font:normal bold 19px arial;
+    border-radius:5px;
+    cursor:pointer;
+    margin:5px;
+    width:100px;
+    height:30px;
+    text-align:center;
+}
+.btn:hover{
+    background-color:rgb(8, 177, 8);
+}
+.btn:active{
+    background-color:rgb(8, 207, 8);
+}
+.navigator a{
+    font:small-caps bold 19px verdana;
+    color:black;
+    margin:20px;
+    text-decoration:none;
+}
+a{
+    cursor: pointer;
+    margin:5px;
+}
+.images{
+    margin:20px;
+    padding:10px;
+    width:350px;
+    height:250px;
+}
+#about{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+}
+#h2{
+    background-color:seagreen;
+    flex-basis:100%;
+    width:30%;
+    color:black;
+    text-align:center;
+    font:bold 1.7em verdana;
+}
+#aboutheading{
+    flex-basis:100%;
+    color:black;
+    text-align:center;
+    font:bold 1.7em verdana;
+}
+#paraAbout{
+    font-size:1.5em;
+    color:black;
+    flex:1 1 50%;
+    background-color:rgba(255,255,255,0.8);
+    padding:1%;
+    max-width:580px;
+    border-radius:7px;
+}
+#majetuser{
+    flex:1 1 40%;
+    margin:1%;
+    max-width:450px;
+    border-radius:8px;
+}
+footer{
+    text-align:center;
+    font:normal 20px arial;
+    background-color:rgb(63, 250, 63);
+}
+#footer{
+    text-decoration:none;
+}
+p{
+    color:rgb(59, 59, 59);
+    font-size:smaller;
+}
+.boxes{
+    display:flex;
+    flex-wrap:wrap;
+    flex:1;
+    background-color:white;
+    overflow:auto;
+    margin:20px;
+}
+#card1, #card2, #card3 {
+    background-color:rgb(211, 207, 207);
+    margin:15px;
+    text-align:center;
+    flex:1;
+}
+.footerlogo{
+    margin:20px;
+    padding:10px;
+    width:100%px;
+    height:auto;
+    max-width:350px;
+}
+.logo img{
+    width:20px;
+    height:20px;
+    cursor:pointer;
+}

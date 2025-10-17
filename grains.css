@@ -1,0 +1,58 @@
+body{
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+    margin:0;
+    min-height:100vh;
+}
+.btns_div{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+}
+.btn{
+    background-color:rgb(11,147,11);
+    margin:5px;
+    border-radius:5px;
+    font: bold 19px arial;
+    width:100px;
+    height:30px;
+}
+.btn:hover{
+    background-color:rgb(8,177,8);
+}
+.btn:active{
+    background-color:rgb(8,207,8);
+}
+.all{
+    background:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),
+    url("Images/grain.png") no-repeat center center/cover;
+    display:grid;
+    min-height:100vh;
+    margin:0;
+}
+h1{
+    color:rgb(3,48,3);
+    font:bold 50px verdana;
+    text-align:center;
+}
+.container{
+    background-color:white;
+    display:flex;
+    padding:10px;
+    flex:1;
+}
+.grains{
+    margin:10px;
+    padding:10px;
+    flex:1;
+    background-color:rgb(219,219,219);
+    text-align:center;
+}
+.logo img{
+    width:20px;
+    height:20px;
+}
+footer{
+    background-color:rgb(63, 250, 63);
+    text-align:center;
+}

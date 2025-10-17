@@ -1,0 +1,39 @@
+form{
+    border:3px solid;
+    width:20%;
+    margin:auto;
+    border-radius:5px;
+    background-color:rgb(71,226,104);
+}
+h2{
+    text-align:center;
+    font-family:arial;
+}
+div{
+    padding:10px;
+    font:bold 20px arial;
+}
+input{
+    width:70%;
+    height:25px;
+    border:2px solid;
+    border-radius:3px;
+    font:15px arial;
+}
+button{
+    position:relative;
+    left:30%;
+    margin:10px;
+    border-radius:4px;
+    font:bold 20px arial;
+    height:30px;
+    width:100px;
+    background-color:rgb(9, 190, 9);
+    cursor:pointer;
+}
+button:hover{
+    background-color:rgb(9,220,9);
+}
+button:active{
+    background-color:rgb(9,240,9);
+}
