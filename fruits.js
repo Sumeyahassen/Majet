@@ -33,10 +33,10 @@ cart.addEventListener("click", function(){
 /*})
 })*/
 const containers = document.querySelectorAll('.container .fruit .cart');
-containers.forEach(container=>{
-    container.addEventListener("click", function(){
-        const par = container.parentElement;
-        container.remove(); 
+containers.forEach(button=>{
+    button.addEventListener("click", function(){
+        const par = button.parentElement;
+        button.remove(); 
         const quantity = document.createElement('label');
         quantity.textContent = "Enter quantity:";
         const input = document.createElement('input');
@@ -57,7 +57,7 @@ containers.forEach(container=>{
                 alert("you have added "+input.value+" kg "+pare.id+" to your cart");
             }
             else{
-                alert("please enter a valid amount!")
+                alert("please enter a valid amount grater than or equal to 1!")
             }
         })
         cancel.addEventListener('click', function(){

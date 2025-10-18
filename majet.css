@@ -1,11 +1,7 @@
 body{
-    background-image:url(fruits.png);
-    background-size:cover;
     display: grid;
     grid-template-rows:auto 1fr auto;
     min-height: 100vh;
-    width:100%;
-    overflow-x:hidden;
     margin: 0;
 }
 h1{
@@ -46,18 +42,24 @@ h1{
 .btn:active{
     background-color:rgb(8, 207, 8);
 }
-.navdiv{
+/*.navdiv{
     background-color: rgb(63, 250, 63);
     height:30px;
-}
-/*nav{
-    text-align: center;
 }*/
+.navigator ul{
+    list-style-type: none;
+    background-color:rgb(63, 250, 63);
+    overflow: hidden;
+}
 .navigator a{
+    text-decoration: none;
+    display:block;
     font:small-caps bold 29px verdana;
     color:black;
     margin:20px;
-    text-decoration:none;
+}
+.navigator li{
+    float:left;
 }
 a{
     cursor: pointer;
@@ -123,16 +125,22 @@ p{
 .boxes{
     display:flex;
     flex-wrap:wrap;
-    flex:1;
     background-color:white;
-    overflow:auto;
+    padding: 2%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     margin:20px;
+    overflow: hidden;
 }
-#card1, #card2, #card3 {
+.card{
+    align-items: center;
+    justify-content: center;
     background-color:rgb(211, 207, 207);
     margin:15px;
-    text-align:center;
     flex:1;
+    padding: 1%;
+    width: 300%;
 }
 .footerlogo{
     margin:20px;
