@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState, useRef } from "react";
 import callAudio from "../../public/audio/megbiya1.mp3";
 import sound1 from "../../public/audio/sound1.mp3";
@@ -16,6 +16,10 @@ function Buttans() {
     setIsCalling(true); // enable 1-4 buttons
     setSelectedButton(null); // reset previous selection
   }
+  function EndFunction() {
+    window.location.reload();
+  }
+
   function handleNumberClick(value) {
     if (!isCalling) return; // do nothing if call not started
 

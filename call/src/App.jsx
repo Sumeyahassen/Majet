@@ -6,6 +6,9 @@ import Array from "./Array";
 import ToDoList from "./ToDoList";
 import Phone from "./components/Phone";
 import Demo from "./components/Demo";
+import UpperBtn from "./components/buttons/UpperBtn";
+import NumBtn from "./components/buttons/NumBtn";
+import Todo from "./components/todo/Todo";
 function App() {
   return (
     <div className="overflow-y-hidden min-h-screen">
@@ -15,14 +18,16 @@ function App() {
           Welcame to Majet Call Senter
         </h1>
       </div>
-      <Input />
-      <Buttans />
+      {/* <Input />
+      <Buttans /> */}
       {/* <DialPad/>  */}
       {/* <Array/> */}
-
       {/* <ToDoList/> */}
       {/* <Phone/> */}
       {/* <Demo /> */}
+      {/* <UpperBtn />
+      <NumBtn /> */}
+      <Todo />
     </div>
   );
 }

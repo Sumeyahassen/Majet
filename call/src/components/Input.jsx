@@ -7,9 +7,9 @@ function Input({ value }) {
         readOnly
         value={""}
         required
-        placeholder="Hi"
-        className="bg-yellow-50 focus:outline-none border-none w-full rounded-2xl py-5 placeholder:text-center"
-        size={100}
+        placeholder="Selam Denbenachin"
+        className="bg-gray-50 focus:outline-none border-none w-full rounded-md  py-5 placeholder:text-center"
+        size={300}
       />
     </div>
   );

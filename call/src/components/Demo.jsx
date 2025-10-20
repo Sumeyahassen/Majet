@@ -22,3 +22,24 @@ function Demo() {
 }
 
 export default Demo;
+// wedelayla component import lemareg  yeminaregewun neger
+// for exaple
+// const [fullnames,setFullNametate([
+//   {firstNAme:'',LastName:'',MiddleName:''},
+//   {firstNAme:'',LastName:'',MiddleName:''},
+//   {firstNAme:'',LastName:'',MiddleName:''},
+//   {firstNAme:'',LastName:'',MiddleName:''}
+// ])
+// for develay sintekemewu
+// <div>
+// {
+//   fullnames.map((FFName ,index)=>
+//  return (
+// <FullNameDesplayComponent
+// firstName={FFname.firstName}
+// LastName={FFname.lastname}
+// MiddleName={FFname.Middlename}
+// />
+//   ))
+// }
+// </div>
