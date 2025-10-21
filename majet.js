@@ -8,6 +8,8 @@ const home = document.querySelector("#home");
 const about = document.querySelector("#about");
 const product = document.querySelector("#product");
 const contact = document.querySelector("#contact");
+const shop = document.getElementById("shop");
+
 home.addEventListener("click", function(){
     document.getElementById("homeSection").scrollIntoView({ behavior: "smooth" });
 })
@@ -19,4 +21,7 @@ product.addEventListener("click", function(){
 })
 contact.addEventListener("click", function(){
     document.getElementById("contactSection").scrollIntoView({ behavior: "smooth" });
+})
+shop.addEventListener('click', function(){
+    document.getElementById("homeSection").scrollIntoView({ behavior:"smooth"});
 })

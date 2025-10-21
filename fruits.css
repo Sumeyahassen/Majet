@@ -47,6 +47,9 @@ h1{
     align-items: center;
     justify-content: center;
 }
+/*.images{
+    width:100%;
+}*/
 .fruit{
     background-color:rgb(219, 219, 219);
     text-align:center;
