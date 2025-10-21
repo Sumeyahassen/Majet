@@ -11,13 +11,15 @@
         <h2>Login</h2>
         <div>
         <label>Username:</label><br>
-        <input type="text" required>
+        <input type="text" id="username" required autocomplete="current-username">
     </div>
         <div>
         <label>password:</label><br>
-        <input type="password" required>
+        <input type="password" id="password" required autocomplete="current-password">
     </div>
-        <button>submit</button>
+        <button id="button">submit</button><br>
+        <a id="backToSignup">signup</a>
     </form>
+<script src="loginform.js"></script>
 </body>
 </html>
