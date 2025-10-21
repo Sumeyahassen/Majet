@@ -1,20 +1,17 @@
-body{
-    background-image:url(vegitable.png);
-    background-size:cover;
-}
-h2{
-    text-align:center;
-}
-.container{
+form{
     width:20%;
     margin:auto;
     border:3px solid;
     border-radius:5px;
-    background-color:rgb(71, 226, 104);
+    background-color:rgb(195, 196, 195);
+}
+h2{
+    text-align:center;
+    font-family:arial;
 }
 div{
-    padding:10px;
-    font:bold 20px arial;
+    padding:2%;
+    font:bold 80% arial;
 }
 input{
     width:70%;
@@ -26,16 +23,60 @@ input{
 button{
     position:relative;
     left:28%;
-    width:140px;
-    height:30px;
-    font:bold 15px arial;
-    background-color:rgb(9, 190, 9);
+    width:50%;
+    font:bold 70% arial;
+    background-color:rgb(236, 238, 236);
     border-radius:4px;
     cursor:pointer;
+    overflow:hidden;
 }
 button:hover{
-    background-color:rgb(9, 220, 9);
+    background-color:rgb(135, 136, 131);
 }
 button:active{
-    background-color:rgb(9, 240, 9);
+    background-color:rgb(193, 194, 188);
 }
+#backToLogin{
+    position:relative;
+    left:45%;
+    font:small-caps 80% arial;
+    cursor:pointer;
+}
+@media (max-width: 600px) {
+    button {
+      font-size: 50%;
+      padding: 0.6% 1%;
+    }
+    #backToLogin{
+        position:relative;
+        left:29%;
+        font:small-caps 80% arial;
+        cursor: pointer;
+        margin: 2%;
+    }
+  }
+@media (min-width:601px) and (max-width:1199px){
+    button{
+        font-size: 60%;
+        padding: 0.8% 1.5%;
+    }
+    #backToLogin{
+        position:relative;
+    left:40%;
+    font:small-caps 80% arial;
+    cursor: pointer;
+    margin: 2%;
+    }
+} 
+  @media (min-width: 1200px) {
+    button {
+      font-size: 80%;
+      padding: 1% 2%;
+    }
+    #backToLogin{
+    position:relative;
+    left:43%;
+    font:small-caps 80% arial;
+    cursor: pointer;
+    margin: 2%;
+    }}

@@ -6,7 +6,7 @@ body{
 }
 h1{
     text-align:center;
-    font:bold 60px serif;
+    font:bold 50px serif;
     color:rgb(3, 48, 3);
 }
 #h2heading{
@@ -15,11 +15,19 @@ h1{
     color:rgb(28, 99, 28);
 }
 .container{
-    background:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-    url('fruits.png') no-repeat center center/cover;
-    background-size:cover;
-    padding:10px;
-    flex:1;
+    /*background:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url('fruits.png') no-repeat center center/cover;*/
+    display:grid;
+    margin:0;
+}
+#shop{
+    text-align: center;
+    font:bold 80% arial;
+    background-color: rgb(247, 242, 242);
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 7px;
+    width: 10%;
 }
 .btn_div{
     display:flex;
@@ -70,10 +78,12 @@ a{
     margin:3%;
 }
 .images{
-    margin:20px;
-    padding:10px;
-    width:350px;
-    height:250px;
+    margin:2%;
+    padding:1%;
+    width:70%;
+    height:auto;
+    max-width: 100%;
+    object-fit: cover;
 }
 #about{
     display:flex;
@@ -124,23 +134,26 @@ p{
 }
 .boxes{
     display:flex;
+    box-sizing: border-box;
     flex-wrap:wrap;
+    justify-content: center;
     background-color:white;
     padding: 2%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin:20px;
-    overflow: hidden;
+    margin:2%;
+    max-width: 100%;
+    align-items: stretch;
 }
 .card{
-    align-items: center;
-    justify-content: center;
     background-color:rgb(211, 207, 207);
-    margin:15px;
-    flex:1;
+    margin:1%;
+    flex: 1 1 30%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
     padding: 1%;
-    width: 300%;
+    max-width: 100%;
+    overflow:hidden;
+    text-align:center;
 }
 .footerlogo{
     margin:20px;
@@ -153,4 +166,7 @@ p{
     width:20px;
     height:20px;
     cursor:pointer;
+}
+h3{
+    font:bold 150% arial;
 }

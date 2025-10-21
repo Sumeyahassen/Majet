@@ -1,7 +1,7 @@
 body{
     display:grid;
     grid-template-rows: auto 1fr auto;
-    min-height:100vh;
+    min-height:100vh;   /*this line of property make the footer to stick to the bottom by giving all other space to the header and main part*/
     margin:0;
 }
 .btns_div{
@@ -28,7 +28,7 @@ body{
     background:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),
     url("Images/vegetable.png") no-repeat center center/cover;
     display:grid;
-    min-height:100vh;/*this line of property make the footer to stick to the bottom by giving all other space to the header and main part*/
+    min-height:100vh;
     margin:0;
 }
 h1{
@@ -37,23 +37,27 @@ h1{
     font:bold 50px verdana;
 }
 .container{
+    background-color:white;
     display:flex;
     flex-wrap: wrap;
-    background-color:white;
-    padding:20px;
-    text-align:center;
-    margin:10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding:1%;
+    margin:2%;
 }
 .vegetable{
     background-color:rgb(219,219,219);
-    padding:10px;
-    margin:10px;
+    padding:1%;
+    margin:1%;
     flex:1;
-    width:300%;
+    text-align:center;
+    box-sizing: border-box;
+    justify-content: center;
 }
 footer{
     text-align:center;
-    background-color:rgb(63, 250, 63)
+    background-color:rgb(63, 250, 63);
 }
 .logo img{
     width:20px;

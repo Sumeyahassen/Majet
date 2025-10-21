@@ -32,24 +32,29 @@ body{
     min-height: 100vh;
     margin: 0;
 }
-.container{
-    background-color:white;
-    padding:20px;
-    text-align:center;
-    margin:10px;
-    display:flex;
-}
-.fruit{
-    background-color:rgb(219, 219, 219);
-    width:200px;
-    padding:10px;
-    flex:1;
-    margin:10px;
-}
 h1{
     color:rgb(3,48,3);
     text-align:center;
     font:bold 50px verdana;
+}
+.container{
+    background-color:white;
+    padding:1%;
+    text-align:center;
+    margin:2%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.fruit{
+    background-color:rgb(219, 219, 219);
+    text-align:center;
+    box-sizing: border-box;
+    justify-content: center;
+    padding:1%;
+    flex:1;
+    margin:1%;
 }
 footer{
     text-align:center;

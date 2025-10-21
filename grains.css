@@ -1,8 +1,8 @@
 body{
     display:grid;
     grid-template-rows: auto 1fr auto;
-    margin:0;
     min-height:100vh;
+    margin:0;
 }
 .btns_div{
     display:flex;
@@ -16,6 +16,7 @@ body{
     font: bold 19px arial;
     width:100px;
     height:30px;
+    cursor:pointer;
 }
 .btn:hover{
     background-color:rgb(8,177,8);
@@ -38,21 +39,37 @@ h1{
 .container{
     background-color:white;
     display:flex;
-    padding:10px;
-    flex:1;
+    flex-wrap: wrap;
+    padding:1%;
+    margin: 2%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /*overflow: hidden;*/
 }
 .grains{
-    margin:10px;
-    padding:10px;
-    flex:1;
     background-color:rgb(219,219,219);
+    padding:1%;
+    margin:1%;
+    flex:1;
+    /*max-width:85%;*/
+    text-align:center;
+    box-sizing: border-box;
+    justify-content: center;
+    /*align-items: center;*/
+}
+.image{
+    margin:2%;
+    padding:1%;
+    width:70%;
+    height:250px;
+}
+footer{
+    background-color:rgb(63, 250, 63);
     text-align:center;
 }
 .logo img{
     width:20px;
     height:20px;
-}
-footer{
-    background-color:rgb(63, 250, 63);
-    text-align:center;
+    cursor:pointer;
 }
