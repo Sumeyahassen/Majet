@@ -28,6 +28,13 @@ h1{
     justify-content: flex-start;
     border-radius: 7px;
     width: 10%;
+    cursor: pointer;
+}
+#shop:hover{
+    background-color: rgb(237, 232, 232);
+}
+#shop:active{
+    background-color: rgb(227, 222, 222);
 }
 .btn_div{
     display:flex;
@@ -105,20 +112,57 @@ a{
     text-align:center;
     font:bold 1.7em verdana;
 }
+.aboutdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:2%;
+}
+@media (max-width: 600){
+    .aboutdiv{
+        flex-direction: column;
+        text-align: center;
+    }
+    .aboutdiv img{
+        width:80%;
+    }
+}
+@media (max-width: 601) and (min-width:1024){
+    .aboutdiv{
+        flex-direction: column;
+        text-align: center;
+    }
+    .aboutdiv img{
+        width:90%;
+    }
+}
+@media (min-width: 1025){
+    .aboutdiv{
+        flex-direction: row;
+        text-align: center;
+    }
+    .aboutdiv img{
+        width:40%;
+    }
+}
 #paraAbout{
-    font-size:1.5em;
+    font-size:1.4em;
     color:black;
-    flex:1 1 50%;
+    /*flex:1 1 50%;*/
     background-color:rgba(255,255,255,0.8);
     padding:1%;
     max-width:580px;
     border-radius:7px;
+    box-sizing: border-box;
 }
 #majetuser{
     flex:1 1 40%;
     margin:1%;
+    display: inline;
     max-width:450px;
     border-radius:8px;
+    box-sizing: border-box;
 }
 footer{
     text-align:center;

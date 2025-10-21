@@ -25,8 +25,8 @@ body{
     background-color:rgb(8,207,8);
 }
 .all{
-    background:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),
-    url("Images/grain.png") no-repeat center center/cover;
+    /*background:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),
+    url("Images/grain.png") no-repeat center center/cover;*/
     display:grid;
     min-height:100vh;
     margin:0;
@@ -58,12 +58,12 @@ h1{
     justify-content: center;
     /*align-items: center;*/
 }
-.image{
+/*.image{
     margin:2%;
     padding:1%;
     width:70%;
     height:250px;
-}
+}*/
 footer{
     background-color:rgb(63, 250, 63);
     text-align:center;
