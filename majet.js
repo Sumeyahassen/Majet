@@ -23,5 +23,5 @@ contact.addEventListener("click", function(){
     document.getElementById("contactSection").scrollIntoView({ behavior: "smooth" });
 })
 shop.addEventListener('click', function(){
-    document.getElementById("homeSection").scrollIntoView({ behavior:"smooth"});
+window.location.href="signupform.html";
 })
