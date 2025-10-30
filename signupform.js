@@ -25,7 +25,7 @@ else if(!email.value.includes("@")){
     alert("Email must have @!")
 }
 else if(!email.value.includes('.')){
-    alert("Please enter valid email, email must include '.'!");
+    alert("Please enter valid email, email must include '.' !");
 }
 else if(password.value.trim() === ''){
     alert("Plaese enter password!");
