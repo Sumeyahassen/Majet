@@ -1,0 +1,246 @@
+body{
+    display: grid;
+    grid-template-rows:auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+}
+h1{
+    text-align:center;
+    font:bold 50px serif;
+    color:rgb(3, 48, 3);
+}
+#h2heading{
+    text-align:center;
+    font:bold 30px verdana;
+    color:rgb(28, 99, 28);
+}
+.container{
+    display:grid;
+    margin:0;
+}
+#shop{
+    text-align: center;
+    font:bold 100% arial;
+    background-color: rgb(204, 203, 203);
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 7px;
+    width: 10%;
+    cursor: pointer;
+    position: relative;
+    left:40%;
+}
+#shop:hover{
+    background-color: rgb(237, 232, 232);
+}
+#shop:active{
+    background-color: rgb(227, 222, 222);
+}
+.btn_div{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+}
+.btn{
+    background-color:rgb(11, 147, 11);
+    font:normal bold 19px arial;
+    border-radius:5px;
+    cursor:pointer;
+    margin:5px;
+    width:100px;
+    height:30px;
+    text-align:center;
+}
+.btn:hover{
+    background-color:rgb(8, 177, 8);
+}
+.btn:active{
+    background-color:rgb(8, 207, 8);
+}
+.navigator ul{
+    list-style-type: none;
+    background-color:rgb(63, 250, 63);
+    overflow: hidden;
+}
+.navigator a{
+    text-decoration: none;
+    display:block;
+    font:small-caps bold 29px verdana;
+    color:black;
+    margin:20px;
+}
+.navigator li{
+    float:left;
+}
+a{
+    cursor: pointer;
+    margin:5px;
+}
+#homePageDiscription{
+    font:96% verdana;
+    color:black;
+    padding:0.5%;
+}
+/*#howToDoHeading{
+    background-color: rgb(53, 240, 53);
+    width:40%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left:
+}*/
+#titleHowToDo{
+    flex-basis:100%;
+    color:rgb(94, 59, 59);
+    text-align:center;
+    font:bold 1.7em verdana;
+}
+.howToDo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:2%;
+}
+.how{
+    font: 100% verdana;
+}
+#homepagePicture{
+    width:20%;
+    margin:3%;
+}
+#productHeding{
+    text-align:center;
+    font:bold 30px arial;
+    /*text-decoration: underline;*/
+    color:black;
+}
+.images{
+    margin:2%;
+    padding:1%;
+    width:70%;
+    height:auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+#about{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+}
+#h2{
+    background-color:seagreen;
+    flex-basis:100%;
+    color:black;
+    text-align:center;
+    font:bold 1.7em verdana;
+}
+#aboutheading{
+    flex-basis:100%;
+    color:black;
+    text-align:center;
+    font:bold 1.7em verdana;
+}
+.aboutdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:2%;
+}
+@media (max-width: 600){
+    .aboutdiv{
+        flex-direction: column;
+        text-align: center;
+    }
+    .aboutdiv img{
+        width:80%;
+    }
+}
+@media (max-width: 601) and (min-width:1024){
+    .aboutdiv{
+        flex-direction: column;
+        text-align: center;
+    }
+    .aboutdiv img{
+        width:90%;
+    }
+}
+@media (min-width: 1025){
+    .aboutdiv{
+        flex-direction: row;
+        text-align: center;
+    }
+    .aboutdiv img{
+        width:40%;
+    }
+}
+#paraAbout{
+    font-size:1.4em;
+    color:black;
+    /*flex:1 1 50%;*/
+    background-color:rgba(255,255,255,0.8);
+    padding:1%;
+    max-width:580px;
+    border-radius:7px;
+    box-sizing: border-box;
+}
+#majetuser{
+    flex:1 1 40%;
+    margin:1%;
+    display: inline;
+    max-width:450px;
+    border-radius:8px;
+    box-sizing: border-box;
+}
+footer{
+    text-align:center;
+    font:normal 20px arial;
+    background-color:rgb(63, 250, 63);
+}
+#footer{
+    text-decoration:none;
+}
+p{
+    color:rgb(59, 59, 59);
+    font-size:smaller;
+}
+.boxes{
+    display:flex;
+    box-sizing: border-box;
+    flex-wrap:wrap;
+    justify-content: center;
+    background-color:white;
+    padding: 2%;
+    margin:2%;
+    max-width: 100%;
+    align-items: stretch;
+}
+.card{
+    background-color:rgb(211, 207, 207);
+    margin:1%;
+    flex: 1 1 30%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1%;
+    max-width: 100%;
+    overflow:hidden;
+    text-align:center;
+}
+.footerlogo{
+    margin:20px;
+    padding:10px;
+    width:100%px;
+    height:auto;
+    max-width:350px;
+}
+.logo img{
+    width:20px;
+    height:20px;
+    cursor:pointer;
+}
+h3{
+    font:bold 150% arial;
+}
