@@ -1,11 +1,11 @@
 import React from "react";
-
-function NavBar({ onClick, text }) {
+import { Link } from "react-router-dom";
+function NavBar({ link, text }) {
   return (
     <div>
-      <div className="text-xl font-semibold cursor-pointer " onClick={onClick}>
+      <Link to={link} className="text-xl font-semibold cursor-pointer ">
         {text}
-      </div>
+      </Link>
     </div>
   );
 }

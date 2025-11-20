@@ -13,12 +13,12 @@ function Footer() {
     { Icon: FaTelegram, color: "text-blue-400" },
   ]);
   return (
-    <div className="shadow p-16 bg-lime-200 ">
+    <div className="shadow p-11 bg-lime-200 ">
       <ul className="flex items-center justify-center gap-10">
         {SocialIcons.map(({ Icon, color }, index) => (
           <li key={index}>
             <Icon
-              size={30}
+              size={40}
               className={`transition transform hover:scale-110 ${color}`}
             />
           </li>

@@ -9,8 +9,10 @@ function Todo() {
   };
   //   ################# task adder ################
   const AddTask = () => {
-    setTasks([...Tasks, NewTask]);
-    setNewTask("");
+    if (NewTask.trim() !== "") {
+      setTasks((prevTasks) => [...prevTasks, NewTask]);
+      setNewTask("");
+    }
   };
   //   ################# task deleter ################
   const DeleteTask = (index) => {

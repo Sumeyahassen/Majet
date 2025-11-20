@@ -12,11 +12,11 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-green-50">
-      <div className="bg-white shadow-lg rounded-xl p-10 w-full max-w-md">
-        {/* Logo */}
-        <h1 className="text-3xl font-bold text-green-700 text-center mb-6">
-          Deyall
+    <div className="min-h-screen flex items-center justify-center bg-lime-200 ">
+      <div className="bg-white shadow-lg rounded-xl p-14 w-full max-w-md">
+        {/* Logo Name */}
+        <h1 className="text-3xl font-bold text-lime-700 text-center mb-10">
+          Majet
         </h1>
 
         {/* Role Selector */}
@@ -26,7 +26,7 @@ export default function LoginPage() {
               key={r}
               className={`px-4 py-2 rounded-lg font-medium ${
                 role === r
-                  ? "bg-green-600 text-white"
+                  ? "bg-lime-600 text-white"
                   : "bg-gray-200 text-gray-700"
               }`}
               onClick={() => setRole(r)}
@@ -43,7 +43,7 @@ export default function LoginPage() {
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-green-600"
+            className="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-lime-600"
             required
           />
           <input
@@ -51,24 +51,27 @@ export default function LoginPage() {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-green-600"
+            className="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-lime-600"
             required
           />
 
           <button
             type="submit"
-            className="bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition"
+            className="bg-lime-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition"
           >
             Login
           </button>
         </form>
 
         {/* Links */}
-        <div className="flex justify-between text-sm mt-4 text-gray-600">
-          <a href="/signup" className="hover:text-green-700">
+        <div className="flex justify-between text-sm mt-4 text-gray-600 mb-10">
+          <a href="/signup" className="hover:text-lime-600 font-semibold">
             Sign Up
           </a>
-          <a href="/forgot-password" className="hover:text-green-700">
+          <a
+            href="/forgotPassword"
+            className="hover:text-lime-700 font-semibold"
+          >
             Forgot Password?
           </a>
         </div>
