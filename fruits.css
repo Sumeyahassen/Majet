@@ -1,0 +1,67 @@
+body{
+    display: grid;
+    grid-template-rows:auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+}
+.btns_div{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+}
+.btn{
+    margin:5px;
+    background-color:rgb(11, 147, 11);
+    border-radius:5px;
+    font:bold 19px arial;
+    text-align:center;
+    height:30px;
+    width:100px;
+    cursor:pointer;
+}
+.btn:hover{
+    background-color:rgb(8, 177, 8);
+}
+.btn:active{
+    background-color:rgb(8,207,8);
+}
+.all{
+    /*background:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), 
+    url("Images/realfruit.png") no-repeat center center/cover;*/
+    grid-template-rows:auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+}
+h1{
+    color:rgb(3,48,3);
+    text-align:center;
+    font:bold 50px verdana;
+}
+.container{
+    background-color:white;
+    padding:1%;
+    text-align:center;
+    margin:2%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.fruit{
+    background-color:rgb(219, 219, 219);
+    text-align:center;
+    box-sizing: border-box;
+    justify-content: center;
+    padding:1%;
+    flex:1;
+    margin:1%;
+}
+footer{
+    text-align:center;
+    background-color:rgb(63, 250, 63);
+}
+.logo img{
+    width:20px;
+    height:20px;
+    cursor:pointer;
+}
