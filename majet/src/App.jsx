@@ -1,16 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// component one
+const First = () => {
+  return <div className="">This is my first component</div>;
+};
+const Seconnd = () => {
+  return (
+    <div className="">
+      <h1>second component</h1>
+    </div>
+  );
+};
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-  <div className="App ">
-  
-  </div>
-  )
+    <div className="App text-red-500">
+      <First />
+      Wel came
+      <Seconnd />
+    </div>
+  );
 }
 
-export default App
+export default App;
