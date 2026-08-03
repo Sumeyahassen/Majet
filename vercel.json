@@ -1,0 +1,8 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "env": {
+    "BROWSERSLIST_IGNORE_OLD_DATA": "true"
+  }
+}
